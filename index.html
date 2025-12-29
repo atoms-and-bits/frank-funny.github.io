@@ -37,23 +37,21 @@
             line-height: 1.6;
         }
         /* Add CSS variables- by @DesignSpectra */
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --accent-color: #007bff; /* Engineering Blue */
+        .btn-toggle {
+            background-color: var(--text-color); /* Dark button on light bg */
+            color: var(--bg-color);              /* Light text on dark button */
+            border: 2px solid var(--accent-color);
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
-        [data-theme="dark"] {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --accent-color: #4db8ff;
+        .btn-toggle:hover {
+            transform: scale(1.05); /* Grow slightly when hovered */
+            opacity: 0.9;
         }
-
-       body {
-           background-color: var(--bg-color);
-           color: var(--text-color);
-           transition: 0.3s; /* Smooth transition when switching */
-       }    
 
         /* Circuit Board Background */
         .bg-animation {
@@ -1189,7 +1187,11 @@
     </style>
 </head>
 <body>
-    <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+    <nav style="display: flex; justify-content: flex-end; padding: 20px;">
+    <button id="theme-toggle" class="btn-toggle">
+        🌙 Dark Mode
+    </button>
+    </nav>
     <div class="bg-animation">
         <div class="circuit-line"></div>
         <div class="circuit-line"></div>
