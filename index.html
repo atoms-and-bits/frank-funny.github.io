@@ -36,6 +36,24 @@
             overflow-x: hidden;
             line-height: 1.6;
         }
+        /* Add CSS variables. by @DesignSpectra */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #007bff; /* Engineering Blue */
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #4db8ff;
+        }
+
+       body {
+           background-color: var(--bg-color);
+           color: var(--text-color);
+           transition: 0.3s; /* Smooth transition when switching */
+       }    
 
         /* Circuit Board Background */
         .bg-animation {
