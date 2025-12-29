@@ -36,7 +36,7 @@
             overflow-x: hidden;
             line-height: 1.6;
         }
-        /* Add CSS variables. by @DesignSpectra */
+        /* Add CSS variables- by @DesignSpectra */
         :root {
             --bg-color: #ffffff;
             --text-color: #333333;
@@ -125,10 +125,10 @@
             border-bottom: 1px solid rgba(0, 212, 255, 0.2);
             transition: all 0.3s ease;
         }
-        /* : Add the Toggle Button - @DesignSpectra */
-        <button id="theme-toggle" style="cursor: pointer; padding: 5px 10px;">
+        /* /* : Add the Toggle Button - @DesignSpectra */
+        /* <button id="theme-toggle" style="cursor: pointer; padding: 5px 10px;">
             🌙 Toggle Dark Mode
-        </button>
+        </button> */ */
 
         nav.scrolled {
             padding: 0.8rem 5%;
@@ -1189,6 +1189,7 @@
     </style>
 </head>
 <body>
+    <button id="theme-toggle">🌙 Toggle Dark Mode</button>
     <div class="bg-animation">
         <div class="circuit-line"></div>
         <div class="circuit-line"></div>
@@ -2425,7 +2426,7 @@
         }
     </script>
 
-    <script>
+    <!-- <script>
         /* Add the JavaScript Logic */
         const toggleBtn = document.getElementById('theme-toggle');
         const currentTheme = localStorage.getItem('theme');
@@ -2445,6 +2446,37 @@
                localStorage.setItem('theme', 'dark');
            }
        });
+    </script> -->
+    <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    // 1. Debug: Check if button exists
+    if (!toggleBtn) {
+        console.error("Error: Button with id 'theme-toggle' not found!");
+    } else {
+        console.log("Button found. Initializing Dark Mode logic.");
+    }
+
+    // 2. Load saved theme
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    }
+
+    // 3. Click Event Listener
+    toggleBtn.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            console.log("Switched to Light Mode");
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            console.log("Switched to Dark Mode");
+        }
+    });
     </script>
 </body>
 </html>
