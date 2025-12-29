@@ -1,0 +1,95 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2448;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="ctrlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark background -->
+  <circle cx="32" cy="32" r="32" fill="url(#bgGrad)"/>
+  
+  <!-- Circuit board traces (embedded system representation) -->
+  <g stroke="#00d4ff" stroke-width="1.5" fill="none" opacity="0.4">
+    <!-- Horizontal traces -->
+    <line x1="8" y1="20" x2="24" y2="20"/>
+    <line x1="40" y1="20" x2="56" y2="20"/>
+    <line x1="8" y1="44" x2="24" y2="44"/>
+    <line x1="40" y1="44" x2="56" y2="44"/>
+    
+    <!-- Vertical traces -->
+    <line x1="20" y1="8" x2="20" y2="24"/>
+    <line x1="20" y1="40" x2="20" y2="56"/>
+    <line x1="44" y1="8" x2="44" y2="24"/>
+    <line x1="44" y1="40" x2="44" y2="56"/>
+    
+    <!-- Connection points (vias) -->
+    <circle cx="20" cy="20" r="1.5" fill="#00d4ff"/>
+    <circle cx="44" cy="20" r="1.5" fill="#00d4ff"/>
+    <circle cx="20" cy="44" r="1.5" fill="#00d4ff"/>
+    <circle cx="44" cy="44" r="1.5" fill="#00d4ff"/>
+  </g>
+  
+  <!-- Central control loop symbol (feedback control) -->
+  <g filter="url(#glow)">
+    <!-- Outer circle (system boundary) -->
+    <circle cx="32" cy="32" r="16" stroke="url(#ctrlGrad)" stroke-width="2.5" fill="none"/>
+    
+    <!-- Input arrow (setpoint) -->
+    <path d="M 12 32 L 18 32" stroke="#00ff88" stroke-width="2" fill="none"/>
+    <path d="M 18 32 L 15 29 L 15 35 Z" fill="#00ff88"/>
+    
+    <!-- Output arrow -->
+    <path d="M 46 32 L 52 32" stroke="#00ff88" stroke-width="2" fill="none"/>
+    <path d="M 52 32 L 49 29 L 49 35 Z" fill="#00ff88"/>
+    
+    <!-- Feedback arrow (bottom arc) -->
+    <path d="M 48 38 Q 48 48, 32 48 Q 16 48, 16 38" 
+          stroke="#00d4ff" stroke-width="2" fill="none" 
+          stroke-dasharray="2,2"/>
+    <path d="M 16 38 L 18 41 L 13 41 Z" fill="#00d4ff"/>
+    
+    <!-- Controller symbol (central element) -->
+    <!-- Microchip/processor representation -->
+    <rect x="28" y="28" width="8" height="8" fill="#00d4ff" opacity="0.8"/>
+    
+    <!-- Pin connections (IC pins) -->
+    <line x1="26" y1="30" x2="28" y2="30" stroke="#00ff88" stroke-width="1"/>
+    <line x1="26" y1="32" x2="28" y2="32" stroke="#00ff88" stroke-width="1"/>
+    <line x1="26" y1="34" x2="28" y2="34" stroke="#00ff88" stroke-width="1"/>
+    
+    <line x1="36" y1="30" x2="38" y2="30" stroke="#00ff88" stroke-width="1"/>
+    <line x1="36" y1="32" x2="38" y2="32" stroke="#00ff88" stroke-width="1"/>
+    <line x1="36" y1="34" x2="38" y2="34" stroke="#00ff88" stroke-width="1"/>
+  </g>
+  
+  <!-- Letter 'E' and 'C' monogram (stylized) -->
+  <g fill="url(#ctrlGrad)" font-family="Arial, sans-serif" font-weight="bold" opacity="0.9">
+    <!-- Subtle monogram overlay -->
+    <text x="23" y="38" font-size="14" fill="#00ff88" opacity="0.6">E</text>
+    <text x="34" y="38" font-size="14" fill="#00d4ff" opacity="0.6">C</text>
+  </g>
+  
+  <!-- Corner accent marks (embedded firmware feel) -->
+  <g stroke="#00ff88" stroke-width="1.5" opacity="0.5">
+    <polyline points="10,14 10,10 14,10" fill="none"/>
+    <polyline points="54,10 50,10 50,14" fill="none"/>
+    <polyline points="10,50 10,54 14,54" fill="none"/>
+    <polyline points="50,54 54,54 54,50" fill="none"/>
+  </g>
+</svg>
