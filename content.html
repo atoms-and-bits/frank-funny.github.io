@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmbeddedCtrl | Electrical & Embedded Systems Engineer</title>
+    <meta name="description" content="Building intelligent control systems - RTOS, embedded firmware, control algorithms, and industrial automation.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="circuit-line"></div>
+        <div class="circuit-line"></div>
+        <div class="circuit-line"></div>
+        <div class="circuit-line"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">Embedded<span>Ctrl</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">About</a></li>
+            <li class="dropdown">
+                <a href="#books" class="dropdown-toggle">Books</a>
+                <div class="dropdown-menu">
+                    <a href="#fiction">Fiction</a>
+                    <a href="#nonfiction">Non-Fiction</a>
+                    <a href="#science">Science</a>
+                    <a href="#engineering">Engineering</a>
+                    <a href="#technology">Technology</a>
+                </div>
+            </li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#entrepreneurship">Ventures</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="brand-name">Embedded<span>Ctrl</span></div>
+            <div class="hero-label">Real-time embedded systems | Control algorithms | Industrial automation</div>
+            <h1>Building <span class="highlight">Intelligent Control Systems</span></h1>
+            <p>From RTOS-based firmware to PLC automation—I design embedded systems that bridge computation and physical control.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects →</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="credibility-strip">
+        <div class="credibility-container">
+            <div class="credibility-item">
+                <div class="credibility-icon">💻</div>
+                <div class="credibility-text">
+                    <h4>Embedded C/C++</h4>
+                    <p>Bare-metal & RTOS development</p>
+                </div>
+            </div>
+            <div class="credibility-item">
+                <div class="credibility-icon">⚙️</div>
+                <div class="credibility-text">
+                    <h4>RTOS</h4>
+                    <p>FreeRTOS, Zephyr, ThreadX</p>
+                </div>
+            </div>
+            <div class="credibility-item">
+                <div class="credibility-icon">🎛️</div>
+                <div class="credibility-text">
+                    <h4>Control Systems</h4>
+                    <p>PID, LQR, MPC, State-Space</p>
+                </div>
+            </div>
+            <div class="credibility-item">
+                <div class="credibility-icon">🏭</div>
+                <div class="credibility-text">
+                    <h4>Automation & PLC</h4>
+                    <p>Industrial control & SCADA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="expertise-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="expertise-intro">
+                <p>Real-world embedded control systems—from RTOS firmware to industrial automation.</p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('rtos')">RTOS</button>
+                <button class="filter-btn" onclick="filterProjects('control')">Control Systems</button>
+                <button class="filter-btn" onclick="filterProjects('uav')">UAV/Drones</button>
+                <button class="filter-btn" onclick="filterProjects('plc')">PLC/Automation</button>
+            </div>
+
+            <div class="project-card-large" data-category="rtos">
+                <div class="project-split">
+                    <div class="project-visual">
+                        <div class="project-icon-large">⚙️</div>
+                        <div class="project-tech-visual">
+                            <span class="tech-badge">FreeRTOS</span>
+                            <span class="tech-badge">STM32</span>
+                            <span class="tech-badge">C/C++</span>
+                            <span class="tech-badge">CMSIS</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">RTOS</span>
+                        <h3>Multi-Threaded Sensor Fusion System</h3>
+                        <p class="project-description">
+                            Real-time sensor fusion platform running on FreeRTOS, combining IMU, GPS, and environmental sensors with Kalman filtering for autonomous navigation.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Task prioritization and inter-task communication using queues and semaphores</li>
+                            <li>Deterministic 1kHz sensor polling with <5μs jitter</li>
+                            <li>DMA-based data acquisition for zero CPU overhead</li>
+                            <li>Low-power modes with wake-on-interrupt capability</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">📄 Details</a>
+                            <a href="#" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-large" data-category="control">
+                <div class="project-split">
+                    <div class="project-visual">
+                        <div class="project-icon-large">🎛️</div>
+                        <div class="project-tech-visual">
+                            <span class="tech-badge">PID</span>
+                            <span class="tech-badge">LQR</span>
+                            <span class="tech-badge">MATLAB</span>
+                            <span class="tech-badge">Simulink</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">Control Systems</span>
+                        <h3>Inverted Pendulum Stabilization</h3>
+                        <p class="project-description">
+                            Model-based control system implementing multiple control strategies (PID, LQR, MPC) for cart-pendulum stabilization with real-time visualization.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>State-space modeling and linearization around equilibrium</li>
+                            <li>Comparative analysis: PID vs LQR vs Model Predictive Control</li>
+                            <li>Hardware-in-the-loop testing with real actuators and encoders</li>
+                            <li>Disturbance rejection and robustness analysis</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">📄 Details</a>
+                            <a href="#" class="project-link">📊 Simulation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-large" data-category="uav">
+                <div class="project-split">
+                    <div class="project-visual">
+                        <div class="project-icon-large">🚁</div>
+                        <div class="project-tech-visual">
+                            <span class="tech-badge">ArduPilot</span>
+                            <span class="tech-badge">PX4</span>
+                            <span class="tech-badge">MAVLink</span>
+                            <span class="tech-badge">ROS</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">UAV</span>
+                        <h3>Autonomous Quadcopter Navigation</h3>
+                        <p class="project-description">
+                            Custom flight controller firmware with autonomous waypoint navigation, obstacle avoidance, and real-time telemetry over MAVLink protocol.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Attitude control using cascaded PID loops (rate + angle)</li>
+                            <li>GPS-based path planning with A* algorithm</li>
+                            <li>LiDAR integration for terrain following and collision avoidance</li>
+                            <li>Ground control station with live video feed</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">📄 Details</a>
+                            <a href="#" class="project-link">🎥 Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-large" data-category="plc">
+                <div class="project-split">
+                    <div class="project-visual">
+                        <div class="project-icon-large">🏭</div>
+                        <div class="project-tech-visual">
+                            <span class="tech-badge">Siemens S7</span>
+                            <span class="tech-badge">TIA Portal</span>
+                            <span class="tech-badge">Modbus</span>
+                            <span class="tech-badge">HMI</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">PLC/Automation</span>
+                        <h3>Industrial Conveyor Control System</h3>
+                        <p class="project-description">
+                            Complete automation solution for multi-stage conveyor system with vision inspection, sorting logic, and SCADA integration for factory monitoring.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Structured text programming with IEC 61131-3 standards</li>
+                            <li>Recipe management system for different production modes</li>
+                            <li>Real-time OEE tracking and alarm management</li>
+                            <li>Modbus TCP integration with 15+ field devices</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">📄 Details</a>
+                            <a href="#" class="project-link">📐 Diagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="profile">
+        <h2 class="section-title">Profile</h2>
+        <p class="section-subtitle">About Me / Bio Sketch</p>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="your-photo.jpg" alt="Profile Photo" id="profilePhoto" style="display: none;">
+                <span class="placeholder" id="photoPlaceholder">👨‍💻</span>
+            </div>
+            <div class="about-text">
+                <h3>Your Name Here</h3>
+                <p>[Add your professional introduction here]</p>
+                <p>[Add more about your expertise]</p>
+                <p>[Share your philosophy and vision]</p>
+                <div class="about-highlights">
+                    <div class="highlight-item"><strong>Education:</strong> Your Degree</div>
+                    <div class="highlight-item"><strong>Experience:</strong> Your Years</div>
+                    <div class="highlight-item"><strong>Specialization:</strong> Your Focus</div>
+                    <div class="highlight-item"><strong>Location:</strong> Your City</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise-section" id="books">
+        <div class="expertise-container">
+            <h2 class="section-title">Books & Publications</h2>
+            <div class="expertise-intro">
+                <p>A curated collection of books across various genres and disciplines.</p>
+            </div>
+            
+            <h3 id="fiction" class="book-category">Fiction</h3>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <span class="expertise-icon">📘</span>
+                    <h3>Book Title</h3>
+                    <p><strong>Author Name</strong></p>
+                    <p>Brief description or your thoughts about this book.</p>
+                </div>
+            </div>
+
+            <h3 id="nonfiction" class="book-category">Non-Fiction</h3>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <span class="expertise-icon">📗</span>
+                    <h3>Book Title</h3>
+                    <p><strong>Author Name</strong></p>
+                    <p>Brief description or your thoughts about this book.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise-section" id="blog">
+        <div class="expertise-container">
+            <h2 class="section-title">Blog</h2>
+            <div class="expertise-intro">
+                <p>Thoughts, insights, and stories on engineering, technology, and innovation.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-header">✍️</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 January 15, 2025</span>
+                            <span>⏱️ 5 min read</span>
+                        </div>
+                        <h3>Your Blog Post Title Here</h3>
+                        <p class="blog-excerpt">Write a compelling excerpt here.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Engineering</span>
+                            <span class="blog-tag">Technology</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise-section" id="entrepreneurship">
+        <div class="expertise-container">
+            <h2 class="section-title">Entrepreneurship & Ventures</h2>
+            <div class="expertise-intro">
+                <p>Building technology companies from concept to market.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <span class="expertise-icon">🚀</span>
+                    <h3>Your Venture Name</h3>
+                    <p><strong>Your Role (Year - Present)</strong></p>
+                    <p>Description of your venture and achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Ready to bring your engineering project to life</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>I'm available for consulting, project collaboration, and full-time opportunities.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            <span style="color: var(--primary)">your.email@example.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <span style="color: var(--primary)">+1 (555) 123-4567</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Location</strong><br>
+                            <span style="color: var(--primary)">Your City, State</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Tell me about your project..." required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="GitHub">💻</a>
+            <a href="#" title="Email">📧</a>
+            <a href="#" title="ResearchGate">📄</a>
+        </div>
+        <p>&copy; 2025 EmbeddedCtrl. Built with passion for technology and design.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
