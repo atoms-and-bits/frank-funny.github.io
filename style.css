@@ -1163,3 +1163,71 @@ body.light-mode .theme-toggle {
     transition: all 0.3s ease;
     font-family: inherit;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 5%;
+    background: rgba(10, 14, 39, 0.8);
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20, 27, 61, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 50%;
+    color: var(--primary);
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    color: var(--dark);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+}
+
+footer p {
+    color: rgba(232, 244, 248, 0.6);
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    #app {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 15px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
