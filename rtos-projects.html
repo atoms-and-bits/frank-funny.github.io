@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RTOS Projects | ModvWorks</title>
-  <meta name="description" content="Real-time scheduling from bare metal to industrial production — FreeRTOS, STM32, 110+ industrial reference implementations by ModvWorks.">
+  <meta name="description" content="FreeRTOS on STM32 — 120 production firmware modules across 12 industry domains. Automotive, aerospace, medical, energy, marine and more. ModvWorks / Bit & Iron Foundry.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -529,10 +529,11 @@
         RTOS<br>Projects<br><em>Reference</em>
       </h1>
       <p class="hero-sub">
-        Real-time scheduling from bare metal to industrial production.
-        FreeRTOS on STM32, 110+ industrial applications, cooperative
-        schedulers, and an interactive browser-based scheduling lab.
-        Built for engineers who need systems that actually ship.
+        FreeRTOS on STM32F407 — 120 production-style firmware modules
+        across 12 industry domains. From automotive ECU schedulers and
+        FOC motor control to satellite ADCS, medical devices, and mine
+        hoist S-curve control. Built for engineers who need systems
+        that actually ship.
       </p>
       <div>
         <a href="https://github.com/ModvWorks/embedded-rtos-systems"
@@ -540,7 +541,7 @@
           View on GitHub ↗
         </a>
         <a href="#sections" class="hero-cta hero-cta-ghost">
-          Browse sections
+          Browse domains
         </a>
       </div>
     </div>
@@ -556,30 +557,70 @@
       <div class="terminal-body">
         <p class="t-cmd">$ <span>ls -la</span></p>
 
-        <a href="#bare-metal" class="t-line">
+        <a href="#d01" class="t-line">
           <span class="t-perm">drwxr-xr-x</span>
-          <span class="t-name dir">01_bare_metal/</span>
-          <span class="t-comment">↳ cooperative &amp; round-robin</span>
+          <span class="t-name dir">01_automotive/</span>
+          <span class="t-comment">↳ ECU, ABS, BMS, ADAS</span>
         </a>
-        <a href="#freertos" class="t-line">
+        <a href="#d02" class="t-line">
           <span class="t-perm">drwxr-xr-x</span>
-          <span class="t-name dir">02_freertos/</span>
-          <span class="t-comment">↳ tasks, queues, semaphores</span>
+          <span class="t-name dir">02_industrial_automation/</span>
+          <span class="t-comment">↳ PLC, FOC, CNC, SCADA</span>
         </a>
-        <a href="#industrial" class="t-line">
+        <a href="#d03" class="t-line">
           <span class="t-perm">drwxr-xr-x</span>
-          <span class="t-name dir">03_industrial_applications/</span>
-          <span class="t-comment">↳ 12 domains, 110+ apps</span>
+          <span class="t-name dir">03_aerospace_avionics/</span>
+          <span class="t-comment">↳ FCS, FADEC, UAV, AHRS</span>
         </a>
-        <a href="#patterns" class="t-line">
+        <a href="#d04" class="t-line">
           <span class="t-perm">drwxr-xr-x</span>
-          <span class="t-name dir">04_advanced_patterns/</span>
-          <span class="t-comment">↳ production design patterns</span>
+          <span class="t-name dir">04_medical_devices/</span>
+          <span class="t-comment">↳ ventilator, ECG, pacemaker</span>
         </a>
-        <a href="#lab" class="t-line">
+        <a href="#d05" class="t-line">
           <span class="t-perm">drwxr-xr-x</span>
-          <span class="t-name dir">05_scheduling_lab/</span>
-          <span class="t-comment">↳ browser scheduler sim</span>
+          <span class="t-name dir">05_consumer_electronics/</span>
+          <span class="t-comment">↳ 3D printer, e-bike, gimbal</span>
+        </a>
+        <a href="#d06" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">06_telecommunications/</span>
+          <span class="t-comment">↳ 5G-NR, SDR, LTE, LoRa</span>
+        </a>
+        <a href="#d07" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">07_energy_power/</span>
+          <span class="t-comment">↳ MPPT, wind, UPS, HVDC</span>
+        </a>
+        <a href="#d08" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">08_iot_smarthome/</span>
+          <span class="t-comment">↳ HVAC, security, smart meter</span>
+        </a>
+        <a href="#d09" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">09_military_defense/</span>
+          <span class="t-comment">↳ radar DSP, ECM, IFF</span>
+        </a>
+        <a href="#d10" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">10_marine_underwater/</span>
+          <span class="t-comment">↳ ROV, AIS, DP-2, sonar</span>
+        </a>
+        <a href="#d11" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">11_agricultural_tech/</span>
+          <span class="t-comment">↳ sprayer, milking robot</span>
+        </a>
+        <a href="#d12" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">12_mining_heavy_equipment/</span>
+          <span class="t-comment">↳ hoist, blast, gas detect</span>
+        </a>
+        <a href="#common" class="t-line">
+          <span class="t-perm">drwxr-xr-x</span>
+          <span class="t-name dir">common/</span>
+          <span class="t-comment">↳ FreeRTOSConfig, PID, IIR</span>
         </a>
         <div class="t-line" style="cursor:default;">
           <span class="t-perm">-rw-r--r--</span>
@@ -601,16 +642,16 @@
 <div class="stats">
   <div class="stats-inner">
     <div class="stat">
-      <div class="stat-num">5</div>
-      <div class="stat-label">repo sections</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">110+</div>
-      <div class="stat-label">industrial implementations</div>
-    </div>
-    <div class="stat">
       <div class="stat-num">12</div>
       <div class="stat-label">industry domains</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">120</div>
+      <div class="stat-label">RTOS modules</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">10.5K</div>
+      <div class="stat-label">lines of firmware C</div>
     </div>
     <div class="stat">
       <div class="stat-num">2</div>
@@ -619,126 +660,353 @@
   </div>
 </div>
 
-<!-- SECTION CARDS -->
+<!-- DOMAIN CARDS -->
 <div class="sections" id="sections">
   <div class="section-header">
     <p class="section-eyebrow">// what's inside</p>
-    <h2 class="section-title">Five layers of the RTOS stack</h2>
+    <h2 class="section-title">12 domains, 120 FreeRTOS modules</h2>
   </div>
   <div class="cards">
 
-    <div class="card" id="bare-metal">
+    <div class="card" id="d01">
       <div class="card-num">01 /</div>
-      <div class="card-title">Bare Metal Scheduling</div>
-      <div class="card-path">01_bare_metal/</div>
+      <div class="card-title">Automotive</div>
+      <div class="card-path">01_automotive/</div>
       <p class="card-desc">
-        Seven applications built twice — once with pure cooperative round-robin
-        (no interrupts), once with ISR-driven task signaling. The mechanics
-        FreeRTOS abstracts away are fully visible here. Starvation, priority
-        inversion, context-switch cost: all on display, no safety net.
+        ADC-DMA ECU scheduler with VE fuelling, ABS 4-wheel slip-ratio
+        solenoid control at 1 kHz, PID cruise control, LTC6811 BMS with
+        event-group safety supervisor, TPMS RF Manchester decode, airbag
+        MEMS crash detection at PRI_RT with IWDG guard, active suspension
+        4-corner IMU PID, dual-CAN gateway with ID filtering, ADAS
+        radar/camera/ultrasonic fusion with FCW + LDW, EV thermal
+        management with MAX31865 SPI motor winding temperature.
       </p>
       <div class="card-tags">
-        <span class="tag green">STM32F4</span>
-        <span class="tag">round-robin</span>
-        <span class="tag">ISR</span>
-        <span class="tag">cooperative</span>
+        <span class="tag green">STM32F407</span>
+        <span class="tag cyan">CAN bus</span>
+        <span class="tag cyan">DMA→notify</span>
+        <span class="tag">IWDG</span>
+        <span class="tag">Event groups</span>
       </div>
       <a class="card-link"
-         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/01_bare_metal"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/01_automotive"
          target="_blank" rel="noopener">
         browse →
       </a>
     </div>
 
-    <div class="card" id="freertos">
+    <div class="card" id="d02">
       <div class="card-num">02 /</div>
-      <div class="card-title">FreeRTOS Fundamentals</div>
-      <div class="card-path">02_freertos/</div>
+      <div class="card-title">Industrial Automation</div>
+      <div class="card-path">02_industrial_automation/</div>
       <p class="card-desc">
-        Production-oriented examples for every major FreeRTOS primitive.
-        Separate task files, shared config header, HAL integration —
-        and at least one deliberate failure mode shown and explained per module.
-        Stack sizing, heap tradeoffs, ISR-safe variants all covered.
+        IEC 61131-3 PLC ladder emulator over Modbus RTU, full PMSM
+        field-oriented control (Clarke→Park→SVPWM at 16 kHz, ADC injected),
+        4-zone conveyor FSM with jam detection and E-stop, 2-DOF robotic
+        arm IK (Jacobian), G-code CNC with Bresenham 4-axis TIM ISR,
+        SCADA tag database with alarm manager, MIG welding arc voltage FSM,
+        pick-and-place vision SPI interface, hydraulic press brake
+        synchronous crowning, injection moulding 4-zone temperature PID.
       </p>
       <div class="card-tags">
-        <span class="tag green">FreeRTOS v10+</span>
-        <span class="tag cyan">xQueueSend</span>
-        <span class="tag cyan">xSemaphore</span>
-        <span class="tag">xTimerCreate</span>
-        <span class="tag">heap_4</span>
-      </div>
-      <a class="card-link"
-         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/02_freertos"
-         target="_blank" rel="noopener">
-        browse →
-      </a>
-    </div>
-
-    <div class="card" id="industrial">
-      <div class="card-num">03 /</div>
-      <div class="card-title">Industrial Applications</div>
-      <div class="card-path">03_industrial_applications/</div>
-      <p class="card-desc">
-        110+ RTOS reference implementations across 12 industry domains.
-        Each application is grounded in real industrial constraints: deterministic
-        timing budgets, fault containment, sensor fusion, and communication
-        protocol integration. Task maps and timing analysis included.
-      </p>
-      <div class="card-tags">
-        <span class="tag green">12 domains</span>
-        <span class="tag">IEC 61131-3</span>
+        <span class="tag green">FOC / SVPWM</span>
+        <span class="tag green">IEC 61131-3</span>
+        <span class="tag cyan">G-code</span>
         <span class="tag">SCADA</span>
-        <span class="tag">CAN bus</span>
-        <span class="tag">Modbus</span>
+        <span class="tag">Modbus RTU</span>
       </div>
       <a class="card-link"
-         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/03_industrial_applications"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/02_industrial_automation"
          target="_blank" rel="noopener">
         browse →
       </a>
     </div>
 
-    <div class="card" id="patterns">
+    <div class="card" id="d03">
+      <div class="card-num">03 /</div>
+      <div class="card-title">Aerospace &amp; Avionics</div>
+      <div class="card-path">03_aerospace_avionics/</div>
+      <p class="card-desc">
+        ICM-42688 complementary-filter FCS with servo PWM, BMP388 baro
+        autopilot with altitude/heading PIDs, FADEC N1/N2 input-capture
+        with MAX31855 EGT and overspeed protection, satellite ADCS using
+        full TRIAD algorithm and reaction wheel PID, quadrotor Mahony AHRS
+        with SBUS decode and X-frame motor mixing, standalone Madgwick
+        AHRS node, MAVLink v2 heartbeat + attitude telemetry, TAWS/GPWS
+        modes 1–5, u-blox UBX-NAV-PVT RNAV with XTE CDI output, SDP810
+        cabin pressure outflow valve PID.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">Mahony / Madgwick</span>
+        <span class="tag green">TRIAD ADCS</span>
+        <span class="tag cyan">MAVLink v2</span>
+        <span class="tag">TAWS / GPWS</span>
+        <span class="tag">RNAV / GNSS</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/03_aerospace_avionics"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d04">
       <div class="card-num">04 /</div>
-      <div class="card-title">Advanced RTOS Patterns</div>
-      <div class="card-path">04_advanced_patterns/</div>
+      <div class="card-title">Medical Devices</div>
+      <div class="card-path">04_medical_devices/ &nbsp;⚠ IEC 62304</div>
       <p class="card-desc">
-        Design patterns adapted for embedded production environments:
-        Active Object, Producer-Consumer with DMA handoff, Monitor Object,
-        and the Reactor pattern. Built for constrained memory, hard real-time
-        deadlines, and interrupt-driven execution — not academic exercises.
+        Closed-loop artificial pancreas with CGM UART bridge and stepper
+        micro-delivery, SFM3300 ventilator FSM with apnoea software timer,
+        ADS1298 ECG with Pan-Tompkins QRS detection, VVI pacemaker with
+        DWT µs pulse timing and COMP ISR, haemodialysis blood pump with
+        event-group fault containment, infusion pump with occlusion and
+        air-in-line safety, surgical robot 6-DOF tremor LPF + force limits,
+        time-division LED SpO2 Beer-Lambert, AED rhythm analysis +
+        H-bridge biphasic shock FSM, MRI gradient SVPWM + quench detection.
       </p>
       <div class="card-tags">
-        <span class="tag green">Active Object</span>
-        <span class="tag cyan">DMA handoff</span>
-        <span class="tag">mutex</span>
-        <span class="tag">event-driven</span>
+        <span class="tag green">Safety-critical</span>
+        <span class="tag green">Pan-Tompkins</span>
+        <span class="tag cyan">SpO2</span>
+        <span class="tag">AED / Pacemaker</span>
+        <span class="tag">IWDG</span>
       </div>
       <a class="card-link"
-         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/04_advanced_patterns"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/04_medical_devices"
          target="_blank" rel="noopener">
         browse →
       </a>
     </div>
 
-    <div class="card" id="lab">
+    <div class="card" id="d05">
       <div class="card-num">05 /</div>
-      <div class="card-title">Scheduling Lab</div>
-      <div class="card-path">05_scheduling_lab/simulation/</div>
+      <div class="card-title">Consumer Electronics</div>
+      <div class="card-path">05_consumer_electronics/</div>
       <p class="card-desc">
-        Browser-based interactive RTOS scheduling simulator — no build required.
-        Visualizes RMS, EDF, priority preemption, task blocking, and CPU
-        utilization in real time. An extracted module from the
-        Embedded Control Systems Studio (ECSS).
+        LIS3DH peak-detect smartwatch with MAX30105 PPG-HR, DCMI
+        double-buffer DSLR with histogram AE, TWS earbuds FIR
+        feed-forward ANC with capacitive touch FSM, 74HC165 shift-register
+        gamepad with DRV2605 LRA haptic and BLE HID, 4-axis Bresenham
+        stepper 3D printer with dual PID temperatures, reactive VFH robot
+        vacuum with cliff/bump FSM, dual-PDM delay-sum smart speaker with
+        energy wake-word, Hall 6-step BLDC e-bike with torque PAS and
+        regenerative braking, Mahony gimbal stabiliser, packet-queue home
+        router with DHCP lease table and ACL firewall.
       </p>
       <div class="card-tags">
-        <span class="tag green">RMS</span>
-        <span class="tag green">EDF</span>
-        <span class="tag cyan">interactive</span>
-        <span class="tag">browser-based</span>
+        <span class="tag green">Bresenham Stepper</span>
+        <span class="tag green">Mahony Gimbal</span>
+        <span class="tag cyan">I2S / ANC</span>
+        <span class="tag">DCMI DMA</span>
+        <span class="tag">BLDC Hall</span>
       </div>
       <a class="card-link"
-         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/05_scheduling_lab"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/05_consumer_electronics"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d06">
+      <div class="card-num">06 /</div>
+      <div class="card-title">Telecommunications</div>
+      <div class="card-path">06_telecommunications/</div>
+      <p class="card-desc">
+        Proportional-fair 5G NR scheduler with OFDM generation and HARQ
+        retransmission, AM/FM SDR demodulator with AGC PID and squelch,
+        7-state LTE RRC FSM with PSS/SSS correlation, SIP/RTP VoIP with
+        G.711 µ-law and Goertzel DTMF detection, DVB-S2 Gardner symbol
+        timing recovery with ACM, DECT TDMA frame sync with handset
+        association FSM, SX1276 LoRa mesh with AODV routing and 1% duty
+        cycle enforcement, DWDM EDFA gain PID optical transport, SX1301
+        LoRaWAN 8-channel concentrator gateway, IEEE 802.15.4 Zigbee
+        network coordinator.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">OFDM / HARQ</span>
+        <span class="tag green">SX1276 LoRa</span>
+        <span class="tag cyan">G.711 VoIP</span>
+        <span class="tag">DVB-S2</span>
+        <span class="tag">Zigbee 802.15.4</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/06_telecommunications"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d07">
+      <div class="card-num">07 /</div>
+      <div class="card-title">Energy &amp; Power</div>
+      <div class="card-path">07_energy_power/</div>
+      <p class="card-desc">
+        P&amp;O + InC solar MPPT with 3-stage CC/CV/Float charger,
+        zero-crossing ROCOF smart grid node with under-frequency load
+        shedding, wind turbine Region II/III pitch PID with TSR tracking,
+        online double-conversion UPS with SPWM sine LUT, IEC 61851 EV
+        charger J1772 pilot FSM with RFID auth, grid-scale BMS with EKF
+        SOC estimation and FCR/FFR grid services, 3-phase power meter
+        RMS + THD via DMA, microgrid P-f / Q-V droop with islanding
+        detection, HVDC VSC dq-frame current control, and synthetic
+        inertia FFR controller.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">MPPT / SPWM</span>
+        <span class="tag green">EKF SOC</span>
+        <span class="tag cyan">HVDC VSC</span>
+        <span class="tag">IEC 61851</span>
+        <span class="tag">Droop / FFR</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/07_energy_power"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d08">
+      <div class="card-num">08 /</div>
+      <div class="card-title">IoT &amp; Smart Home</div>
+      <div class="card-path">08_iot_smarthome/</div>
+      <p class="card-desc">
+        BH1750 + PIR daylight-harvesting smart lighting with circadian
+        CCT scheduling, 4-zone DS18B20 HVAC with compressor min-off guard,
+        8-zone capacitive irrigation with flow-meter leak detection,
+        event-group security panel with PIN keypad FSM and siren sequencer,
+        IR-obstacle garage door FSM with auto-close software timer,
+        SCD41 + PMS7003 + SGP30 air quality AQI calculator, simultaneous
+        V/I smart energy meter with TOU tariff, RC522 RFID door lock
+        with tamper-zeroize audit log, flood detection with motorised
+        shutoff valve, PV-surplus home energy manager with load priority.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">SCD41 / SGP30</span>
+        <span class="tag green">RC522 RFID</span>
+        <span class="tag cyan">BH1750 LUX</span>
+        <span class="tag">Software timers</span>
+        <span class="tag">TOU Tariff</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/08_iot_smarthome"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d09">
+      <div class="card-num">09 /</div>
+      <div class="card-title">Military &amp; Defense</div>
+      <div class="card-path">09_military_defense/</div>
+      <p class="card-desc">
+        LFM pulse-compression + CA-CFAR + Kalman tracker radar DSP,
+        3-DOF INS + seeker proportional-navigation missile guidance,
+        LFSR FHSS + AES-128 tactical radio with ARQ retransmit, MCP HV
+        AGC + histogram equalisation night vision controller, artificial
+        potential field UAV swarm consensus, FFT threat detection +
+        chaff/flare ECM jammer, laser rangefinder + ballistic computer +
+        gyro-stabilised gun FCS, tamper-triggered zeroize crypto channel
+        with KFD key-fill interface, Mode 1/2/3A/4 IFF transponder, GPS
+        blue-force tracking + biometrics soldier HUD.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">CA-CFAR / Kalman</span>
+        <span class="tag green">FHSS + AES-128</span>
+        <span class="tag cyan">Prop. Navigation</span>
+        <span class="tag">IFF Transponder</span>
+        <span class="tag">APF Swarm</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/09_military_defense"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d10">
+      <div class="card-num">10 /</div>
+      <div class="card-title">Marine &amp; Underwater</div>
+      <div class="card-path">10_marine_underwater/</div>
+      <p class="card-desc">
+        Fluxgate + GPS waypoint autopilot with Stanley path-following,
+        CHIRP matched-filter echo sounder with TVG and NMEA $SDDBT output,
+        8-thruster pseudo-inverse ROV with MS5837 depth hold, Class B
+        SOTDMA AIS transponder with HDLC/NRZI frame encoding, IMU
+        heel/trim ballast pump PID with HP air blow, acoustic-homing
+        torpedo PNG guidance with proximity fuze, 16-element delay-sum
+        sonar array beamformer, DGPS DP-2 dynamic positioning with ROCOF
+        watchdog, J1939 ship engine monitor with Modbus bridge, OFDM
+        underwater acoustic modem with two-way travel-time ranging.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">SOTDMA AIS</span>
+        <span class="tag green">Delay-sum BF</span>
+        <span class="tag cyan">CHIRP / TVG</span>
+        <span class="tag">DP-2</span>
+        <span class="tag">J1939</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/10_marine_underwater"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d11">
+      <div class="card-num">11 /</div>
+      <div class="card-title">Agricultural Tech</div>
+      <div class="card-path">11_agricultural_tech/</div>
+      <p class="card-desc">
+        GPS 12-section variable-rate crop sprayer with prescription map,
+        RFID milking robot with vacuum PID and conductivity mastitis
+        detection, HX711 load cell + LED candling egg sorter/grader,
+        LoRa vineyard Goidánich disease model with frost fan activation,
+        SCD41 + SGP30 greenhouse climate with CO2 enrichment, combine
+        harvester header height + cylinder speed PID, deep-sleep LoRa
+        soil moisture/EC IoT node at 15-min intervals, geo-fence livestock
+        GPS tracker with MLX90614 fever detection, precision planter
+        downforce pneumatic control, Atlas EZO-DO/pH aquaculture monitor
+        with timed feeder.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">LoRa / RFID</span>
+        <span class="tag green">Atlas EZO</span>
+        <span class="tag cyan">HX711 Load cell</span>
+        <span class="tag">Prescription map</span>
+        <span class="tag">Geo-fence</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/11_agricultural_tech"
+         target="_blank" rel="noopener">
+        browse →
+      </a>
+    </div>
+
+    <div class="card" id="d12">
+      <div class="card-num">12 /</div>
+      <div class="card-title">Mining &amp; Heavy Equipment</div>
+      <div class="card-path">12_mining_heavy_equipment/</div>
+      <p class="card-desc">
+        Pure-pursuit autonomous haul truck with LIDAR obstacle detection
+        and suspension payload monitoring, CH4/CO/O2 multi-zone VFD
+        ventilation manager with UFLS, joystick-to-proportional-valve
+        excavator with overload protection, jaw crusher CSS + ball mill
+        load + flotation pH ore processing plant, WOB/RPM drill rig with
+        stick-slip and kick detection, weightometer conveyor with VFD
+        Modbus speed control, 16-zone electrochemical gas detection with
+        evacuation horn sequencer, RS-485 EDD blast timing controller
+        with misfire check, SSI encoder mine hoist with S-curve velocity
+        profile and safety brake, XRF-proxy ore grade air-jet sorter.
+      </p>
+      <div class="card-tags">
+        <span class="tag green">Pure Pursuit</span>
+        <span class="tag green">S-curve Hoist</span>
+        <span class="tag cyan">LIDAR / Obstacle</span>
+        <span class="tag">VFD Modbus</span>
+        <span class="tag">RS-485 EDD</span>
+      </div>
+      <a class="card-link"
+         href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/12_mining_heavy_equipment"
          target="_blank" rel="noopener">
         browse →
       </a>
@@ -747,15 +1015,15 @@
   </div>
 </div>
 
-<!-- INDUSTRIAL DOMAINS -->
+<!-- DOMAIN GRID -->
 <div class="domains">
   <div class="domains-inner">
     <div class="domains-header">
       <div>
-        <p class="section-eyebrow">// 03_industrial_applications/</p>
+        <p class="section-eyebrow">// github.com/ModvWorks/embedded-rtos-systems</p>
         <h2 class="section-title">12 industry domains</h2>
       </div>
-      <a href="https://github.com/ModvWorks/embedded-rtos-systems/tree/main/03_industrial_applications"
+      <a href="https://github.com/ModvWorks/embedded-rtos-systems"
          target="_blank" rel="noopener"
          style="font-size:12px; color: var(--text-muted); border-bottom: 1px solid var(--border); padding-bottom: 2px;">
         view all on GitHub →
@@ -763,52 +1031,52 @@
     </div>
     <div class="domains-grid">
       <div class="domain-card">
-        <div class="domain-name">Manufacturing</div>
-        <div class="domain-count">CNC, conveyor sequencing</div>
+        <div class="domain-name">Automotive</div>
+        <div class="domain-count">ECU, ABS, BMS, ADAS, EV thermal</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Energy Grid</div>
-        <div class="domain-count">Power quality, load balancing</div>
+        <div class="domain-name">Industrial Automation</div>
+        <div class="domain-count">PLC, FOC, CNC, SCADA, welding</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Transportation</div>
-        <div class="domain-count">Vehicle CAN, railway PLC</div>
+        <div class="domain-name">Aerospace &amp; Avionics</div>
+        <div class="domain-count">FCS, FADEC, UAV, AHRS, RNAV</div>
       </div>
       <div class="domain-card">
         <div class="domain-name">Medical Devices</div>
-        <div class="domain-count">Infusion pump, alarms</div>
+        <div class="domain-count">Ventilator, ECG, pacemaker, AED</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Building Automation</div>
-        <div class="domain-count">HVAC, BACnet, fire suppression</div>
+        <div class="domain-name">Consumer Electronics</div>
+        <div class="domain-count">3D printer, e-bike, gimbal, router</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Oil &amp; Gas</div>
-        <div class="domain-count">Pipeline SCADA, wellhead</div>
+        <div class="domain-name">Telecommunications</div>
+        <div class="domain-count">5G-NR, SDR, LTE, VoIP, LoRa</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Robotics</div>
-        <div class="domain-count">Servo coordination, kinematics</div>
+        <div class="domain-name">Energy &amp; Power</div>
+        <div class="domain-count">MPPT, wind, UPS, HVDC, FFR</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Aerospace</div>
-        <div class="domain-count">Avionics bus, flight surface</div>
+        <div class="domain-name">IoT &amp; Smart Home</div>
+        <div class="domain-count">HVAC, security, smart meter, HEM</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Automotive</div>
-        <div class="domain-count">AUTOSAR mapping, ECU patterns</div>
+        <div class="domain-name">Military &amp; Defense</div>
+        <div class="domain-count">Radar DSP, ECM, IFF, fire control</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Water Treatment</div>
-        <div class="domain-count">Dosing, filtration sequencing</div>
+        <div class="domain-name">Marine &amp; Underwater</div>
+        <div class="domain-count">Autopilot, ROV, AIS, DP-2, sonar</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Food Processing</div>
-        <div class="domain-count">Temperature PID + RTOS</div>
+        <div class="domain-name">Agricultural Tech</div>
+        <div class="domain-count">Sprayer, milking robot, greenhouse</div>
       </div>
       <div class="domain-card">
-        <div class="domain-name">Semiconductor</div>
-        <div class="domain-count">Fab equipment, cleanroom HVAC</div>
+        <div class="domain-name">Mining &amp; Heavy Equip.</div>
+        <div class="domain-count">Hoist, blast, gas detect, haul truck</div>
       </div>
     </div>
   </div>
@@ -816,7 +1084,7 @@
 
 <!-- HARDWARE -->
 <section>
-  <div class="hardware">
+  <div class="hardware" id="common">
     <div>
       <p class="hw-label">// hardware targets</p>
       <h2 class="hw-title">Written for real boards,<br>not simulators.</h2>
@@ -829,7 +1097,7 @@
         translate directly even when peripheral init differs.
       </p>
       <p style="font-size:11px; color:var(--text-dim); letter-spacing:0.05em;">
-        Toolchain: STM32CubeIDE + STM32CubeMX · FreeRTOS v10.4+ · ARM GCC
+        Toolchain: STM32CubeIDE + STM32CubeMX · FreeRTOS v10.5.1 · ARM GCC
       </p>
     </div>
     <div class="hw-boards">
@@ -863,7 +1131,7 @@
   <p class="gh-cta-eyebrow">// open source · MIT license</p>
   <h2 class="gh-cta-title">The full repo is on GitHub.</h2>
   <p class="gh-cta-sub">
-    Clone it, fork it, use what's useful. Every directory has a README.<br>
+    Clone it, fork it, use what's useful. Every domain has a tasks.c ready to study.<br>
     If it saves you hours of debugging, a star is appreciated but not required.
   </p>
   <a href="https://github.com/ModvWorks/embedded-rtos-systems"
